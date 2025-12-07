@@ -1,0 +1,16 @@
+[build]
+  # Commande pour générer le site statique
+  command = "npm run build"
+  # Dossier où Astro génère les fichiers (très important)
+  publish = "dist"
+
+[dev]
+  command = "npm run dev"
+
+# Headers de sécurité (Bonne pratique pour un site pro)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

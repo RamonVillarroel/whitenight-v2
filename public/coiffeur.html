@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UrbanCut - Barber & Style</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { brand: "#3b82f6", dark: "#0f172a" },
+            fontFamily: {
+              display: ['"Oswald"', "sans-serif"],
+              body: ['"Inter"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white text-dark font-body antialiased">
+    <div
+      class="fixed top-0 w-full bg-brand text-white text-[10px] py-2 text-center z-50 uppercase tracking-widest font-bold"
+    >
+      Démonstration par
+      <a href="/" class="underline text-black hover:text-white transition"
+        >WhiteNight Agency</a
+      >
+    </div>
+
+    <nav class="fixed w-full top-8 px-6 z-40">
+      <div class="flex justify-between items-center max-w-7xl mx-auto">
+        <div
+          class="font-display text-4xl font-bold uppercase italic tracking-tighter"
+        >
+          Urban<span class="text-brand">Cut</span>
+        </div>
+        <a
+          href="#booking"
+          class="bg-black text-white px-8 py-3 font-display uppercase tracking-widest text-sm hover:bg-brand transition transform -skew-x-12"
+          >Réserver</a
+        >
+      </div>
+    </nav>
+
+    <section class="h-screen grid md:grid-cols-2">
+      <div
+        class="bg-dark text-white flex flex-col justify-center px-8 md:px-20 pt-20"
+      >
+        <h1
+          class="font-display text-7xl md:text-9xl uppercase leading-[0.9] mb-8"
+          data-aos="fade-right"
+        >
+          Votre <br />
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-brand to-cyan-400"
+            >Style.</span
+          >
+          <br />
+          Notre <br />
+          Art.
+        </h1>
+        <p class="text-gray-400 text-lg max-w-md border-l-4 border-brand pl-6">
+          Le salon de coiffure urbain par excellence. Coupes précises, ambiance
+          brute.
+        </p>
+      </div>
+      <div class="relative h-full overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1000"
+          class="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition duration-1000 scale-105"
+        />
+        <div
+          class="absolute bottom-0 left-0 bg-brand text-white p-8 font-display text-4xl uppercase font-bold"
+        >
+          Ouvert 7j/7
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 px-6 bg-gray-50">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="font-display text-5xl uppercase text-center mb-16">
+          Menu <span class="text-brand">//</span> Tarifs
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-12">
+          <div
+            class="bg-white p-10 shadow-xl border-b-4 border-black"
+            data-aos="fade-up"
+          >
+            <h3
+              class="font-display text-3xl uppercase mb-8 flex items-center gap-2"
+            >
+              <span class="w-3 h-3 bg-brand rounded-full"></span> Hommes
+            </h3>
+            <ul class="space-y-6">
+              <li
+                class="flex justify-between items-baseline border-b border-gray-100 pb-2"
+              >
+                <span class="font-bold uppercase tracking-wide"
+                  >Coupe Classique</span
+                >
+                <span class="font-display text-2xl">25€</span>
+              </li>
+              <li
+                class="flex justify-between items-baseline border-b border-gray-100 pb-2"
+              >
+                <span class="font-bold uppercase tracking-wide"
+                  >Taille Barbe</span
+                >
+                <span class="font-display text-2xl">15€</span>
+              </li>
+              <li
+                class="flex justify-between items-baseline border-b border-gray-100 pb-2"
+              >
+                <span class="font-bold uppercase tracking-wide text-brand"
+                  >Le Complet</span
+                >
+                <span class="font-display text-2xl text-brand">35€</span>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-white p-10 shadow-xl border-b-4 border-brand"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <h3
+              class="font-display text-3xl uppercase mb-8 flex items-center gap-2"
+            >
+              <span class="w-3 h-3 bg-black rounded-full"></span> Femmes
+            </h3>
+            <ul class="space-y-6">
+              <li
+                class="flex justify-between items-baseline border-b border-gray-100 pb-2"
+              >
+                <span class="font-bold uppercase tracking-wide"
+                  >Shampoing + Brushing</span
+                >
+                <span class="font-display text-2xl">30€</span>
+              </li>
+              <li
+                class="flex justify-between items-baseline border-b border-gray-100 pb-2"
+              >
+                <span class="font-bold uppercase tracking-wide"
+                  >Coupe Stylisée</span
+                >
+                <span class="font-display text-2xl">45€</span>
+              </li>
+              <li
+                class="flex justify-between items-baseline border-b border-gray-100 pb-2"
+              >
+                <span class="font-bold uppercase tracking-wide text-brand"
+                  >Couleur / Mèches</span
+                >
+                <span class="font-display text-2xl text-brand">Sur devis</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="py-24 bg-dark text-white text-center">
+      <h2 class="font-display text-6xl uppercase mb-8">Ready ?</h2>
+      <button
+        class="bg-brand text-white px-12 py-4 font-display text-xl uppercase tracking-widest hover:bg-white hover:text-black transition shadow-[0_0_20px_rgba(59,130,246,0.5)]"
+      >
+        Réserver maintenant
+      </button>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

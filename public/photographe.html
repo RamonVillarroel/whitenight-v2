@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Lumière - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Cinzel"', "serif"],
+              sans: ['"Montserrat"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-[#050505] text-gray-300 font-sans antialiased">
+    <div
+      class="fixed top-0 w-full bg-white text-black text-[10px] py-2 text-center z-50 uppercase tracking-widest font-bold"
+    >
+      Démonstration par
+      <a href="/" class="underline hover:text-gray-500 transition"
+        >WhiteNight Agency</a
+      >
+    </div>
+
+    <header
+      class="fixed w-full top-10 px-8 z-40 flex justify-between items-center mix-blend-difference text-white"
+    >
+      <div class="font-serif text-2xl tracking-[0.2em]">LUMIÈRE</div>
+      <a
+        href="#contact"
+        class="text-xs uppercase tracking-[0.3em] border-b border-transparent hover:border-white transition pb-1"
+        >Réserver</a
+      >
+    </header>
+
+    <section class="h-screen relative flex items-center justify-center">
+      <div class="absolute inset-0 opacity-40">
+        <img
+          src="https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?q=80&w=2000"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div
+        class="relative z-10 text-center"
+        data-aos="zoom-out"
+        data-aos-duration="1500"
+      >
+        <h1 class="font-serif text-6xl md:text-9xl text-white mb-6">
+          Capturer<br />L'Éternel
+        </h1>
+        <p class="text-xs tracking-[0.5em] uppercase text-gray-400">
+          Photographie Artistique & Éditoriale
+        </p>
+      </div>
+    </section>
+
+    <section class="py-24 px-4 md:px-12 bg-black">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          class="relative group h-[600px] overflow-hidden grayscale hover:grayscale-0 transition duration-700 ease-in-out"
+          data-aos="fade-up"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=800"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
+          />
+          <div
+            class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition"
+          ></div>
+          <div class="absolute bottom-8 left-8">
+            <span
+              class="text-[10px] uppercase tracking-widest text-white mb-2 block opacity-0 group-hover:opacity-100 transition duration-500"
+              >Portrait</span
+            >
+            <h3
+              class="font-serif text-2xl text-white translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition duration-500 delay-100"
+            >
+              L'Âme Sœur
+            </h3>
+          </div>
+        </div>
+
+        <div
+          class="relative group h-[600px] overflow-hidden grayscale hover:grayscale-0 transition duration-700 ease-in-out md:-mt-24"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute bottom-8 left-8">
+            <span
+              class="text-[10px] uppercase tracking-widest text-white mb-2 block opacity-0 group-hover:opacity-100 transition duration-500"
+              >Mariage</span
+            >
+            <h3
+              class="font-serif text-2xl text-white translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition duration-500 delay-100"
+            >
+              Union Sacrée
+            </h3>
+          </div>
+        </div>
+
+        <div
+          class="relative group h-[600px] overflow-hidden grayscale hover:grayscale-0 transition duration-700 ease-in-out"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=800"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute bottom-8 left-8">
+            <span
+              class="text-[10px] uppercase tracking-widest text-white mb-2 block opacity-0 group-hover:opacity-100 transition duration-500"
+              >Mode</span
+            >
+            <h3
+              class="font-serif text-2xl text-white translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition duration-500 delay-100"
+            >
+              Vogue Paris
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="py-24 text-center border-t border-white/10">
+      <h2 class="font-serif text-4xl text-white mb-8">Créons ensemble.</h2>
+      <a
+        href="mailto:hello@lumiere.com"
+        class="text-xl text-gray-400 hover:text-white transition underline underline-offset-8 decoration-1"
+        >hello@lumiere.com</a
+      >
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

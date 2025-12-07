@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import CursorGlow from '../components/ui/CursorGlow';
 import SpotlightCard from '../components/ui/SpotlightCard';
 import ProcessFlow from '../components/ui/ProcessFlow';
-import DemoShowcase from '../components/ui/DemoShowcase'; // <-- Nouveau composant
+import DemoShowcase from '../components/ui/DemoShowcase';
 import TeamAccordion from '../components/ui/TeamAccordion';
 ---
 
@@ -170,7 +170,13 @@ import TeamAccordion from '../components/ui/TeamAccordion';
         <h2 class="text-4xl md:text-6xl font-serif mb-6 text-white">On lance le projet ?</h2>
         <p class="text-text-muted mb-10">Besoin d'un devis ou d'un conseil ? Réponse rapide garantie.</p>
 
-        <form name="contact" method="POST" data-netlify="true" class="space-y-4 text-left bg-surface/30 p-8 md:p-10 border border-white/10 rounded-xl backdrop-blur-sm">
+        <form
+            name="contact"
+            method="POST"
+            action="/success"
+            data-netlify="true"
+            class="space-y-4 text-left bg-surface/30 p-8 md:p-10 border border-white/10 rounded-xl backdrop-blur-sm"
+        >
             <input type="hidden" name="form-name" value="contact" />
 
             <div class="space-y-1">
